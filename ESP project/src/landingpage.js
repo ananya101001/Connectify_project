@@ -6,6 +6,8 @@ import company2 from './assests/boliviainteligente-z7ICBEMUJfw-unsplash.jpg';
 import company3 from './assests/shutter-speed-RoqC4Bw5B8A-unsplash.jpg';
 
 
+
+
 function LandingPage() {
   return (
     <div className="landing-page">

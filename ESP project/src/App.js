@@ -1,21 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './landingpage'; // Make sure the file name and path are correct
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FirstLanding from './FirstLanding';
-
+import LandingPage from './landingpage';
+import Jobs from './jobs';
+import Newjob from './newjob'
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Landing Page Route */}
-        <Route path='/' element={<FirstLanding/>}/>
+        
+        <Route path="/" element={<FirstLanding />} />
         <Route path="/landingpage" element={<LandingPage />} />
-
-        {/* Login Page Route */}
+        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/newjob" element={<Newjob/>} />
       
-
-        {/* Add other routes if needed */}
       </Routes>
     </Router>
   );
